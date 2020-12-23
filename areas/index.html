@@ -5,49 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Functions</title>
     <style>
-              body {
-                  font-family: : Arial, Helvetica, sans-serif;
-              }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
 
       .container {
-          display: grid;
-          grid-template: 100px 1fr 100px/200px 1fr;
-          grid-gap: 10px 10px;
-          height: 100vh;
-          grid-template-areas: "header header" "sidebar content" "footer footer";
+        display: grid;
+        grid-template: 100px 1fr 100px/200px 1fr;
+        grid-gap: 10px 10px;
+        height: 100vh;
+        grid-template-areas: "header header" "sidebar content" "footer footer";
       }
       .item {
-              background: lightblue;
-              padding: 10px;
-              border: solid red;
+        background: lightblue;
+        padding: 10px;
+        border: solid red;
+      }
 
-          }
+      .item:nth-of-type(4) {
+        background: lightcoral;
+        overflow: auto;
+        display: grid;
+        grid-template: 50px 50px 50px / 200px 200px 200px;
+      }
+      .item .item {
+        background: yellow;
+      }
 
-          .item:nth-of-type(4) {
-              background: lightcoral;
-              overflow: auto;
-              display: grid;
-              grid-template: 50px 50px 50px / 200px 200px 200px ;
-          }
-          .item .item {
-              background: yellow;
-          }
+      .header {
+        grid-area: header;
+      }
 
-          .header {
-            grid-area: header;
-          }
+      .sidebar {
+        grid-area: sidebar;
+      }
 
-          .sidebar {
-            grid-area: sidebar;
-          }
+      .content {
+        grid-area: content;
+      }
 
-          .content {
-            grid-area: content;
-          }
-
-          .footer {
-            grid-area: footer;
-          }
+      .footer {
+        grid-area: footer;
+      }
     </style>
   </head>
   <body>
