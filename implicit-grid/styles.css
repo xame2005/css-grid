@@ -4,10 +4,12 @@ body {
   }
 
 .container {
-display: grid;
-grid-template: [inicio] 200px 200px [final] / [inicio] 1fr [linea1] 1fr [linea2] 1fr [destacado-end] 1fr [linea4] 1fr [destacado-2-end] 1fr [linea5] 1fr [final] ;
-gap: 5px;
-height: 100vh;
+    display: grid;
+    grid-template: [inicio] 200px 200px [final] / [inicio] 1fr [linea1] 1fr [linea2] 1fr [destacado-end] 1fr [linea4] 1fr [destacado-2-end] 1fr [linea5] 1fr [final] ;
+    gap: 5px;
+    height: 100vh;
+   /* grid-auto-columns: 200px 200px 200px 200px; */
+    grid-auto-rows: 50px 200px;
 }
 
 .item {
