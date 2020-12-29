@@ -1,0 +1,30 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+.container {
+    display: grid;
+    height: 100vh;
+    gap: 5px;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(4, 100px);
+
+    justify-items: start end center stretch; /*Alinea elementos de manera horizontal*/
+    align-items: start end center stretch; /* Alinea elementos de manera vertical*/
+
+    justify-content: start end center stretch space-around space-between space-evenly center; /*Alinea el contenido de manera horizontal*/
+    align-content: start end center stretch space-around space-between space-evenly center; /*Alinea el contenido de manera vertical*/
+}
+
+.item {
+background: lightblue;
+padding: 10px;
+border: solid red;
+}
+
+.item:nth-of-type(5) {
+    /* align-self: start;
+    justify-self: start; */
+}
+
